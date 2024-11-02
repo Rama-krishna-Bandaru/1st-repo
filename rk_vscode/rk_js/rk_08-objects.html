@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+
+
+
+    <script>
+
+        // const product = {
+        //     name : 'socks',
+        //     price : 1090
+        // };
+        
+        // console.log(product);
+        // console.log(product.name);
+
+        // product.name = 'cotton socks';
+        // console.log(product);
+
+        // product.newproperty = true;
+
+        // console.log(product);
+
+        // delete product.newproperty;
+        // console.log(product);
+        
+        // const product2 = {
+        //     name : 'shirt',
+        //     ['delivery-time'] : '1dasy',
+        //     rating : {
+        //         stars : 4.5,
+        //         count : 87
+        //     },
+        //     fun : function function1(){
+        //         console.log('function inside object');
+                
+        //     }
+        // }
+        
+        // console.log(product2);
+        // console.log(product2.name);
+        // console.log(product2['name']);
+        // console.log(product2['delivery-time']);
+        // console.log(product2.rating.count);
+        // product2.fun();
+        
+        // console.log(typeof console.log);
+        
+        // console.log(JSON.stringify(product2));
+
+        // const jsonString = JSON.stringify(product2);
+
+        // console.log(JSON.parse(jsonString));
+        // console.log(typeof JSON.parse(jsonString));
+        
+        console.log('hello'.length);
+        console.log('hello'.toUpperCase);
+
+        const Object1 = {
+            message : 'hello'
+        };
+
+        const object2 = Object1;
+
+        const object3 ={
+            message : 'hello'
+        };
+
+        console.log(object3 === Object1); //false because we didn't referd to object1
+        console.log(object2 === Object1); //true because we did refered to on=bject1
+        
+        const object4 = {
+            message : 'hello',
+            price : 799
+        }
+        
+        //let message = object4.message;
+                    //or
+        const {message, price} = object4;
+        console.log(message,price);
+
+        // const object5 = {
+        //     message : message
+        // }
+                //or
+        const object5 = {
+            message,
+            // method : function function1() {
+            //     console.log('method');
+                        //or
+            method() {
+                console.log('method');
+            //this is short hand method    
+            }
+
+                
+        }      
+        console.log(object5.method);
+        object5.method() //method calling
+        
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
